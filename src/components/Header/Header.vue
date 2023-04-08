@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     handleSelect(key, keyPath) {
-      // router.push({ path: `/project/${project_name}/${script_name}` });
       console.log(key, keyPath);
       this.activeIndex = key;
     }
@@ -57,6 +56,7 @@ export default {
         <template slot="title">{{ project.title }}</template>
         <template v-for="(child, indexChild) in project.children">
           <router-link
+            :key="indexChild + 1"
             class="header__link"
             :to="{
               path: `/project/${project.title}/${child.title}`
