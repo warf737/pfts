@@ -1,7 +1,7 @@
 <script>
 import { loadScriptPage } from "@/utils/importUtils";
 export default {
-  name: "Script",
+  name: "ShowScript",
   data() {
     return {
       scriptName: "",

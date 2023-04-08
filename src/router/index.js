@@ -15,7 +15,7 @@ const routes = [
     name: "project",
     component: loadComponent("ShowComponent"),
     props: {
-      pageName: "Script"
+      pageName: "ShowScript"
     }
   }
 ];
