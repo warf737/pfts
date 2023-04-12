@@ -1,58 +1,9 @@
-// export const rule = {
-//   "item.number": "item.number",
-//   "item.iban": "item.iban",
-//   "item.currency": "item.currencyTest",
-//   "item.contract": "item.contract",
-//   "item.contractName": "item.contractName",
-//   "item.branchCode": "item.branchCode",
-//   "item.branchName": "item.branchName",
-//   "item.openDate": "item.openDate",
-//   "item.closeDate": "item.closeDate",
-//   "item.balance": "item.balance",
-//   "item.balanceClass": "item.balanceClass",
-//   "item.availableBalance": "item.availableBalance",
-//   "item.availableBalanceClass": "item.availableBalanceClass",
-//   "item.overdraft": "item.overdraft",
-//   "item.pcBalance": "item.pcBalance",
-//   "item.pcBalanceClass": "item.pcBalanceClass",
-//   "item.status": "item.status",
-//   "item.lastMoveDate": "item.lastMoveDate",
-//   "item.loans": "item.loans",
-//   "item.blocks": "item.blocks"
-// };
 export const rule = {
   "status.code": "status.codeTest",
   "status.error": "status.errorText",
-  // 1 - ничего не отображается
-  "item.number": "number",
-  "item.iban": "iban",
-  "item.currency": "currencyTest"
-  // 2 - отображается только один элемент
-  // "items.number": "number",
-  // "items.iban": "iban",
-  // "items.currency": "currencyTest"
-  // 3 - отображается все, но в метод трансформации надо передавать массив с данными, а не весь объект респонса
-  // number: "number",
-  // iban: "iban",
-  // currency: "currencyTest"
-  // end
-  // contract: "contract",
-  // contractName: "contractName",
-  // branchCode: "branchCode",
-  // branchName: "branchName",
-  // openDate: "openDate",
-  // closeDate: "closeDate",
-  // balance: "balance",
-  // balanceClass: "balanceClass",
-  // availableBalance: "availableBalance",
-  // availableBalanceClass: "availableBalanceClass",
-  // overdraft: "overdraft",
-  // pcBalance: "pcBalance",
-  // pcBalanceClass: "pcBalanceClass",
-  // status: "status",
-  // lastMoveDate: "lastMoveDate",
-  // loans: "loans",
-  // blocks: "blocks"
+  "items[].number": "items[].number",
+  "items[].iban": "items[].iban",
+  "items[].currency": "items[].currencyTest"
 };
 
 export const data = {
