@@ -1,3 +1,7 @@
+<template>
+  <component :is="component" />
+</template>
+
 <script>
 import { loadPage } from "@/utils/importUtils";
 export default {
@@ -16,7 +20,3 @@ export default {
   }
 };
 </script>
-
-<template>
-  <component :is="component" />
-</template>

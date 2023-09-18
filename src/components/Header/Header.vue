@@ -1,27 +1,5 @@
 <script>
-export const PROJECTS = [
-  {
-    title: "BIS",
-    children: [
-      {
-        title: "TransformResponse",
-        hidden: false
-      },
-      {
-        title: "FindingVariableInObjectArray",
-        hidden: false
-      },
-      {
-        title: "FillingCollection",
-        hidden: false
-      }
-    ]
-  },
-  {
-    title: "Custom",
-    children: []
-  }
-];
+import { PROJECTS } from "@/pages/constants";
 
 export default {
   name: "Header",
