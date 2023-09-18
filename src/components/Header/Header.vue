@@ -6,6 +6,14 @@ export const PROJECTS = [
       {
         title: "TransformResponse",
         hidden: false
+      },
+      {
+        title: "FindingVariableInObjectArray",
+        hidden: false
+      },
+      {
+        title: "FillingCollection",
+        hidden: false
       }
     ]
   },
@@ -24,8 +32,7 @@ export default {
     };
   },
   methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
+    handleSelect(key) {
       this.activeIndex = key;
     }
   }
