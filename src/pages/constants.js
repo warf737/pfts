@@ -17,6 +17,10 @@ export const PROJECTS = [
       {
         title: "CalculationTableTotal",
         hidden: false
+      },
+      {
+        title: "UpdateMenus",
+        hidden: false
       }
     ]
   },
