@@ -16,10 +16,6 @@ export default {
     },
     scripts() {
       return this.activeProject.children;
-    },
-    defaultActiveScript() {
-      return `script-${this.scripts.findIndex(script => script.default) + 1 ||
-        this.activeScriptIndex}`;
     }
   },
   methods: {
@@ -61,7 +57,7 @@ export default {
     </el-menu>
 
     <el-menu
-      :default-active="defaultActiveScript"
+      :default-active="activeScriptIndex"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelectScript"

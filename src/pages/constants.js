@@ -3,6 +3,10 @@ export const PROJECTS = [
     title: "BIS",
     children: [
       {
+        title: "WorkWithDates",
+        hidden: false
+      },
+      {
         title: "TransformResponse",
         hidden: false
       },
@@ -21,11 +25,6 @@ export const PROJECTS = [
       {
         title: "UpdateMenus",
         hidden: false
-      },
-      {
-        title: "WorkWithDates",
-        hidden: false,
-        default: true
       }
     ]
   },
