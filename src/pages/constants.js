@@ -24,7 +24,8 @@ export const PROJECTS = [
       },
       {
         title: "WorkWithDates",
-        hidden: false
+        hidden: false,
+        default: true
       }
     ]
   },

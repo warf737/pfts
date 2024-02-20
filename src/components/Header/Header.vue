@@ -16,6 +16,10 @@ export default {
     },
     scripts() {
       return this.activeProject.children;
+    },
+    defaultActiveScript() {
+      return `script-${this.scripts.findIndex(script => script.default) + 1 ||
+        this.activeScriptIndex}`;
     }
   },
   methods: {
@@ -47,45 +51,27 @@ export default {
       </router-link>
 
       <template v-for="(project, index) in $options.PROJECTS">
-        <el-menu-item :key="index" :index="`${index + 1}`">{{
-          project.title
-        }}</el-menu-item>
+        <el-menu-item
+          v-if="project.children.length"
+          :key="index"
+          :index="`${index + 1}`"
+          >{{ project.title }}</el-menu-item
+        >
       </template>
-      <!--    <template v-for="(project, index) in $options.PROJECTS">-->
-      <!--      <el-submenu-->
-      <!--        :key="index + 1"-->
-      <!--        :index="`${index + 1}`"-->
-      <!--        v-if="project.children.length"-->
-      <!--      >-->
-      <!--        <template slot="title">{{ project.title }}</template>-->
-      <!--        <template v-for="(child, indexChild) in project.children">-->
-      <!--                <router-link-->
-      <!--                  :key="indexChild + 1"-->
-      <!--                  class="header__link"-->
-      <!--                  :to="{-->
-      <!--                    path: `/project/${project.title}/${child.title}`-->
-      <!--                  }"-->
-      <!--                  :props="{-->
-      <!--                    scriptName: child.title-->
-      <!--                  }"-->
-      <!--                >-->
-      <!--                  <el-menu-item :key="indexChild + 1">-->
-      <!--                    {{ child.title }}-->
-      <!--                  </el-menu-item>-->
-      <!--                </router-link>-->
-      <!--        </template>-->
-      <!--      </el-submenu>-->
-      <!--    </template>-->
     </el-menu>
 
     <el-menu
-      :default-active="activeScriptIndex"
+      :default-active="defaultActiveScript"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelectScript"
     >
       <template v-for="(script, index) in scripts">
-        <el-menu-item :key="index" :index="`${index + 1}`">
+        <el-menu-item
+          v-if="!script.hidden"
+          :key="index"
+          :index="`script-${index + 1}`"
+        >
           <router-link
             :key="script + 1"
             class="header__link"
@@ -96,9 +82,7 @@ export default {
               scriptName: script.title
             }"
           >
-            <!--            <el-menu-item :key="index + 1">-->
             {{ script.title }}
-            <!--            </el-menu-item>-->
           </router-link>
         </el-menu-item>
       </template>
