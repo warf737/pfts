@@ -1,5 +1,5 @@
 <script>
-import { table, columns, total, totalDataConst } from "./consts";
+import { table, columns, total } from "./consts";
 import { sumBy, toNumber, toString, reduce } from "lodash";
 export default {
   name: "TestTable",
@@ -7,8 +7,7 @@ export default {
     return {
       table,
       columns,
-      total,
-      totalDataConst
+      total
     };
   },
   methods: {},

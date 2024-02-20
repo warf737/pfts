@@ -3,15 +3,16 @@ import { loadScriptPage } from "@/utils/importUtils";
 export default {
   name: "ShowScript",
   data() {
-    return {
-      scriptName: "",
-      component: null
-    };
+    return {};
   },
   props: {},
-  created() {
-    this.scriptName = this.$route.params.script_name;
-    this.component = loadScriptPage(this.scriptName);
+  computed: {
+    scriptName() {
+      return this.$route.params.script_name;
+    },
+    component() {
+      return loadScriptPage(this.scriptName);
+    }
   }
 };
 </script>

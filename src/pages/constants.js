@@ -21,6 +21,10 @@ export const PROJECTS = [
       {
         title: "UpdateMenus",
         hidden: false
+      },
+      {
+        title: "WorkWithDates",
+        hidden: false
       }
     ]
   },

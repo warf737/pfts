@@ -9,7 +9,7 @@ export const loadComponent = componentName => () => ({
   DELAY
 });
 
-/** @param {string} pageName */
+/** @param {StringConstructor} pageName */
 export const loadPage = pageName => () => ({
   component: import(`@/pages/${pageName}/${pageName}`),
   DELAY

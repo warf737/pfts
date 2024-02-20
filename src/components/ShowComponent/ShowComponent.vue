@@ -13,7 +13,7 @@ export default {
     };
   },
   props: {
-    pageName: () => String
+    pageName: String
   },
   created() {
     this.component = loadPage(this.pageName);

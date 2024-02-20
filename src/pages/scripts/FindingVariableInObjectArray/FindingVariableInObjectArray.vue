@@ -41,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <div>empty component</div>
+  <div>FindingVariableInObjectArray</div>
 </template>
 
 <style lang="scss" scoped></style>

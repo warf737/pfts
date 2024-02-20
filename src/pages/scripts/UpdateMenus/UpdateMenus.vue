@@ -90,7 +90,7 @@ export default {
 </script>
 
 <template>
-  <div>empty component</div>
+  <div>UpdateMenus</div>
 </template>
 
 <style lang="scss" scoped></style>
