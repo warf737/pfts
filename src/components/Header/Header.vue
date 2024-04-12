@@ -57,7 +57,7 @@ export default {
     </el-menu>
 
     <el-menu
-      :default-active="activeScriptIndex"
+      :default-active="activeScriptIndex + 1"
       class="el-menu-demo"
       mode="horizontal"
       @select="handleSelectScript"
