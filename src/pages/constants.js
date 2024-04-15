@@ -3,6 +3,10 @@ export const PROJECTS = [
     title: "BIS",
     children: [
       {
+        title: "FillTemplateObject",
+        hidden: false
+      },
+      {
         title: "WorkWithDates",
         hidden: false
       },
