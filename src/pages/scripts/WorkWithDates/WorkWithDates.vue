@@ -1,5 +1,5 @@
 <script>
-import { format, format as formatDate, isValid, parseISO } from "date-fns";
+import { format as formatDate, isValid, parseISO } from "date-fns";
 import { utcToZonedTime } from "date-fns-tz";
 export default {
   name: "WorkWithDates",
