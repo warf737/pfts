@@ -3,12 +3,16 @@ export const PROJECTS = [
     title: "BIS",
     children: [
       {
-        title: "SortBy",
+        title: "CheckInternalFilter",
         hidden: false
       },
       {
+        title: "SortBy",
+        hidden: true
+      },
+      {
         title: "FillTemplateObject",
-        hidden: false
+        hidden: true
       },
       {
         title: "WorkWithDates",

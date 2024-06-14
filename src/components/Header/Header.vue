@@ -1,5 +1,5 @@
 <script>
-import { PROJECTS } from "@/pages/constants";
+import { PROJECTS } from "@/pages/PAGES";
 
 export default {
   name: "Header",
