@@ -3,32 +3,36 @@ export const PROJECTS = [
     title: "BIS",
     children: [
       {
+        title: "SortBy",
+        hidden: false
+      },
+      {
         title: "FillTemplateObject",
         hidden: false
       },
       {
         title: "WorkWithDates",
-        hidden: false
+        hidden: true
       },
       {
         title: "TransformResponse",
-        hidden: false
+        hidden: true
       },
       {
         title: "FindingVariableInObjectArray",
-        hidden: false
+        hidden: true
       },
       {
         title: "FillingCollection",
-        hidden: false
+        hidden: true
       },
       {
         title: "CalculationTableTotal",
-        hidden: false
+        hidden: true
       },
       {
         title: "UpdateMenus",
-        hidden: false
+        hidden: true
       }
     ]
   },
